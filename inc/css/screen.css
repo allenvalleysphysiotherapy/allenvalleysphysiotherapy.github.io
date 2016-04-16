@@ -231,7 +231,7 @@ dd{
   z-index: 999;
   width: 406px;
   height: 123px;
-  background: url(/inc/img/logo.png);
+  background: url(../img/logo.png);
   font-size: 3.5em;
   letter-spacing: -0.01em;
   text-indent: -999em;
@@ -277,7 +277,7 @@ dd{
   border: 1px #ddd solid;
   width: 998px; 
   overflow: hidden;
-  background: #fff url(/inc/img/bgnd/wave.png) center 104px no-repeat;
+  background: #fff url(../img/bgnd/wave.png) center 104px no-repeat;
 }
 #content { 
   position: relative;
@@ -320,13 +320,13 @@ dd{
   width: 406px; 
   padding: 10px 0 0 0;
   overflow: hidden;
-  background: url(/inc/img/bgnd/secondary_top.png) left top no-repeat;
+  background: url(../img/bgnd/secondary_top.png) left top no-repeat;
   color: #fff;
 }
 #secondary .outer { 
   overflow: hidden;
   padding: 0 0 10px;
-  background: url(/inc/img/bgnd/secondary_bottom.png) center bottom no-repeat;
+  background: url(../img/bgnd/secondary_bottom.png) center bottom no-repeat;
 }
 #secondary .inner { 
   overflow: hidden;
@@ -398,7 +398,7 @@ dd{
   position: relative;
   margin: 3.5em auto 0;
   padding: 3.5em 0 0 0;
-  background: url(/inc/img/bgnd/wave.png) center top no-repeat;
+  background: url(../img/bgnd/wave.png) center top no-repeat;
   color: #a6a6a6;
 }
 #site-info p {
@@ -442,7 +442,7 @@ address.vcard .type {
 
 #home #primary { 
   margin-top: 10px;
-  background: url(/inc/img/bgnd/landscape.jpg) left top no-repeat;
+  background: url(../img/bgnd/landscape.jpg) left top no-repeat;
   width: 537px;
   height: 450px;
   position: relative;
@@ -501,7 +501,7 @@ body#treatments #primary h2 {
 body#about #primary  {
   position: relative;
   text-align: right;
-  background: url(/inc/img/bgnd/joyce.jpg) left top no-repeat;
+  background: url(../img/bgnd/joyce.jpg) left top no-repeat;
   height: 580px;
 }
 body#about #primary p {
