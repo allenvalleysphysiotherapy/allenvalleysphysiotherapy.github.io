@@ -1,0 +1,564 @@
+/* 
+RESET: http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {  
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+/* remember to define focus styles! */
+:focus { outline: 0; }
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* END UNRESETDO */
+
+
+/*
+COLOURS
+
+BGND #6c6361
+
+BLUE #639bc9
+
+*/
+
+
+
+
+/* ________________________________________ */
+
+body {	
+  font-family: Cambria, Georgia, "Times New Roman", Times, serif; 
+  font-size : 62.5%; 
+  line-height: 1.4;
+  color: #6c6361;
+  background: #f8f8f8;
+}
+/* ________________________________________ */
+
+/* =TYPOGRAPHY */
+
+img {
+  border: 0;
+  margin: 0;
+}
+p {
+  clear: none;
+  font-size: 1.4em;
+  margin: 0 0 1.4em 0;
+  padding: 0;
+
+}
+blockquote {
+  font-style: italic;
+}
+cite {
+  font-style: normal;
+  font-size: 1.2em
+}
+acronym,
+abbr {
+  cursor: help;
+  border: 0;
+} 
+abbr.date {
+  border: 0;
+} 
+
+/* -------- */
+/* =LINKS */
+
+a,
+a:link 
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none;
+  font-weight: bold;
+  color: #639bc9;
+}
+a:hover {
+  color: #4d4d4d;
+  text-decoration: underline;
+}
+a.image,
+a:hover.image { 
+  border: 0; 
+}
+
+/* ---------- */
+/* =HEADINGS */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.4em 0 .7em 0;
+}
+h1 {
+  font-size: 2em;
+  letter-spacing: 0.02em;
+  margin: 0 0 .7em 0;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.4em;
+}
+h6 {
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+
+/* -------- */
+/* =LISTS */
+
+ul, ol, dl {
+  font-size: 1.4em;
+  margin: 0 0 1.4em 0;
+  padding: 0;
+}
+ol {
+  margin-left: 20px;
+  padding-left: 20px;
+  list-style: decimal;
+}
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+dl {
+  clear: both;
+  overflow: hidden;
+}
+dt,
+dd {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+dt{
+  clear: both;
+}
+dd{
+  clear: none;
+}
+/* ________________________________________ */
+
+/* =GLOBAL CLASSES & ELEMENTS */
+
+.continued:after {
+  padding: .25em;
+  content: ">";
+}
+.first {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}  
+.summary {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+/* for accessibility */
+.list_head {
+  position:absolute;
+  left:0px;
+  top:-500px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.new { 
+  padding: 0px 4px;
+  background: #639BC9;
+  color: #fff;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+.simpleList li { 
+  margin: 0 0 6px 18px;
+  padding-left: 6px;
+  list-style: disc;
+}
+
+
+/* ________________________________________ */
+
+/* =FURNITURE */
+
+#skiplinks {
+  position:absolute;
+  left:0px;
+  top:-500px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+#logo {
+  position:absolute;
+  left: 565px;
+  top: 15px;
+  border: 0;
+  z-index: 999;
+  width: 406px;
+  height: 123px;
+  background: url(/inc/img/logo.png);
+  font-size: 3.5em;
+  letter-spacing: -0.01em;
+  text-indent: -999em;
+  font-weight: normal;
+  color: #069fbd;
+}
+#menu {
+  position:absolute;
+  left: 28px;
+  top: 48px;
+  width: 504px;
+  height: 37px;
+  margin: 0;
+  padding: 0;
+}
+#menu ul { 
+  font-size: 1.9em;
+  padding: .8em 0 0 0;
+  line-height: 1;
+} 
+#menu ul li { 
+  display: inline;
+  padding: 0 1.2em;
+} 
+#menu ul li a {
+  font-weight: normal;
+}
+#menu ul li a:hover,
+#menu ul li a:active,
+#menu ul li a:focus,
+#menu ul li.selected a {
+  color: #6c6361;
+  text-decoration :none;
+}
+/* ________________________________________ */
+
+/* =CONTAINERS */
+
+#wrapper {
+  position: relative;
+  margin: 20px auto;
+  padding: 154px 0 20px 0;
+  border: 1px #ddd solid;
+  width: 998px; 
+  overflow: hidden;
+  background: #fff url(/inc/img/bgnd/wave.png) center 104px no-repeat;
+}
+#content { 
+  position: relative;
+  margin: 0 auto;
+  width: 943px; 
+  padding: 10px 0 0 0;
+  overflow: hidden;
+}
+#primary { 
+  float: left;
+  width: 517px; 
+  overflow: hidden;
+}
+#home #primary { 
+  width: 537px; 
+}
+.inner h1 {
+  text-transform: uppercase;
+}
+.pagination a {
+  float: left;
+  width: 200px;
+  font-size: 1.2em;
+}
+.pagination a.prev:before {
+  padding: .25em;
+  content: "<";
+}
+.pagination a.next {
+  float: right;
+  text-align: right;
+}
+.pagination a.next:after {
+  padding: .25em;
+  content: ">";
+}
+
+#secondary { 
+  float: right;
+  width: 406px; 
+  padding: 10px 0 0 0;
+  overflow: hidden;
+  background: url(/inc/img/bgnd/secondary_top.png) left top no-repeat;
+  color: #fff;
+}
+#secondary .outer { 
+  overflow: hidden;
+  padding: 0 0 10px;
+  background: url(/inc/img/bgnd/secondary_bottom.png) center bottom no-repeat;
+}
+#secondary .inner { 
+  overflow: hidden;
+  border-left: 10px #8ad9e9 solid;
+  padding: 20px 20px 10px;
+  border-right: 10px #8ad9e9 solid;
+  background: #82cfde;
+}
+#secondary h4 { 
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 1.8em;
+  margin-bottom: .7em;
+  padding-top: .7em;
+  border-top: 1px #69c5d7 solid;
+}
+#secondary h4.first { 
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+#secondary ul { 
+  font-size: 1.6em;
+  line-height: 1.5;
+  overflow: hidden;
+  margin: 0 0 1.2em 0;
+}
+#secondary ul li { 
+  float: left;
+  width: 170px;
+}
+#secondary ul.nav {
+  font-size: 1.4em;
+  padding-top:0.7em;
+  border-top:1px solid #69C5D7;
+}
+#secondary .nav li {
+  width: 346px;
+  margin: 0 0 .3em 15px;
+  padding-left: 6px;
+  list-style: circle;
+}
+#secondary .nav li a {
+  color: #fff;
+}
+#secondary .nav li.selected { 
+  list-style: disc;
+}
+#secondary .selected a { 
+  text-decoration: underline;
+}
+#secondary p { 
+  font-size: 1.6em;
+  line-height: 1.5;
+}
+.article #secondary p { 
+  margin-bottom: .7em;
+  padding-top: .7em;
+  border-top: 1px #69c5d7 solid;
+}
+/* .article #secondary p strong { 
+  display: block;
+  font-size: 2em;
+}
+*/
+#site-info { 
+  clear: both;
+  width: 943px; 
+  position: relative;
+  margin: 3.5em auto 0;
+  padding: 3.5em 0 0 0;
+  background: url(/inc/img/bgnd/wave.png) center top no-repeat;
+  color: #a6a6a6;
+}
+#site-info p {
+  float: right; 
+  width: 200px;
+  font-size: 1.4em;
+  text-align: right;
+}
+#site-info a {
+  color: #878787;
+}
+address.vcard {
+  font-size: 1.3em;
+  font-style: normal;
+  line-height: 1.6;
+  margin: 0 0 2.2em 0;  
+}
+address.vcard span {
+  float: left;	
+  margin: 0 .5em 0 0;
+} 
+address.vcard .group {
+  clear: left;	
+} 
+address.vcard .url,
+address.vcard .country-name,
+address.vcard .type {
+  display: none;
+}
+
+
+
+/* ________________________________________ */
+
+
+/* =LOCALISED */
+
+/* -------- */
+/* =HOME */
+
+
+#home #primary { 
+  margin-top: 10px;
+  background: url(/inc/img/bgnd/landscape.jpg) left top no-repeat;
+  width: 537px;
+  height: 450px;
+  position: relative;
+}
+#home #primary h1,
+#home #primary p { 
+  text-align: right;
+  padding: 15px 20px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+#home #primary p { 
+  font-size: 1.6em;
+  top: 290px;
+  width: 497px;
+  position: absolute;
+}
+#home #primary h1,
+#home #primary p { 
+  position: relative;
+  float: left;
+  margin-left: -999em;
+}
+#home #primary a.continued { 
+  font-size: 1.5em;
+  top: 379px;
+  left: 467px;
+  width: 50px;
+  position: absolute;
+  text-indent: 999em;
+}
+#home #primary .news { 
+  top: 432px;
+  right: 20px;
+  width: 537px;
+  position: absolute;
+  text-align: right;
+  font-size: 14px;
+}
+
+
+
+
+/* -------- */
+/* =TREATMENTS */
+
+body#treatments #primary h2 {
+  margin-bottom: .7em;
+  padding-top: .7em;
+  border-top: 8px #ddd solid;
+}
+/* -------- */
+/* =ABOUT */
+
+body#about #primary  {
+  position: relative;
+  text-align: right;
+  background: url(/inc/img/bgnd/joyce.jpg) left top no-repeat;
+  height: 580px;
+}
+body#about #primary p {
+  padding-left: 225px;
+}
+
+body#about #primary div {
+  text-align: left;
+  width:517px;
+  position: absolute;
+  top: 355px;
+  left: 0px;
+}
+body#about #primary div h2 {
+  margin-top: 0;
+  padding-top: .7em;
+  border-top: 8px #ddd solid;
+}
+body#about #primary div p {
+  padding-left: 0;
+}
+
+#logos {
+  overflow: hidden;
+}
+#logos li {
+  float: left;
+  display: inline;
+  margin: 0 30px 0 0;
+}
+
+/* -------- */
+/* =CONTACT */
+
+body#contact #primary  {
+  padding-top: 10px;
+}
+body#contact #primary div.col {
+  float: left;
+  width: 240px;
+  margin: 20px 0 0 20px;
+}
+body#contact #primary div.col.first {
+  margin-left: 0;
+}
+body#contact #primary div p {
+  font-weight: bold;
+  margin: 0 0 .3em 0;
+}
+.directions {
+  clear: both;
+}
+.directions p {
+  margin: 0;
+}
+body#contact #primary div.phone strong { 
+  display: block;
+  font-size: 2.4em;
+  line-height: 1;
+}

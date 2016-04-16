@@ -1,0 +1,65 @@
+/* ----------------------------------------------- 
+             IE-SPECIFIC OVER-RIDES  
+----------------------------------------------- */
+
+a:hover {
+  cursor: pointer;
+}
+  
+
+/*-------------------------*/
+/* =CLEARING */
+/* apply widths to induce hasLayout */
+
+
+
+
+/*-------------------------*/
+/* =DOUBLE MARGIN */
+
+
+
+/*-------------------------*/
+/* =INPUT DEFAULTS */
+
+
+
+/*-------------------------*/
+/* =MISC */
+
+label {
+  margin: .5em 0 0 0;
+}
+
+
+#site-info li.last {
+  padding-right: 0;
+  margin-right: 0;
+  border: none;
+}
+#menu ul li { 
+  padding: 0 1em;
+} 
+
+body#contact #primary h1,
+body#contact #primary p {
+  padding: 0 295px 0 20px;
+}
+body#contact #primary div p {
+  padding: 0;
+}
+#secondary {
+  margin-bottom: 20px;
+}
+body#contact #primary div.phone p {
+  font-size: 1.3em;
+}
+ 
+/*-------------------------*/
+/* =MARGIN/PADDING/SPACING TWEAKS */
+
+
+/*-------------------------*/
+/* =MIN HEIGHT */
+
+
