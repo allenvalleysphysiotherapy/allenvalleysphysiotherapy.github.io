@@ -223,39 +223,70 @@ dd{
   height:1px;
   overflow:hidden;
 }
+
 #logo {
-  position:absolute;
-  left: 565px;
-  top: 15px;
-  border: 0;
   z-index: 999;
-  width: 406px;
-  height: 123px;
-  background: url(../img/logo.png);
-  font-size: 3.5em;
-  letter-spacing: -0.01em;
-  text-indent: -999em;
-  font-weight: normal;
-  color: #069fbd;
 }
+#logo a {
+  border: 0;
+  display: block;
+  width: 60%;
+  margin: 10px auto 0;
+  position: relative;
+}
+#logo img {
+  max-width: 100%;
+}
+@media screen and (min-width: 37.9375em){
+  #logo {
+    position:absolute;
+    left: 565px;
+    top: 15px;
+    width: 406px;
+    height: 123px;
+  }
+  #logo a {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+}
+
+
 #menu {
-  position:absolute;
-  left: 28px;
-  top: 48px;
-  width: 504px;
-  height: 37px;
-  margin: 0;
+  position: relative;
+  margin: 0 auto 3em;
   padding: 0;
 }
+
 #menu ul { 
-  font-size: 1.9em;
   padding: .8em 0 0 0;
   line-height: 1;
+  text-align: center;
 } 
 #menu ul li { 
   display: inline;
-  padding: 0 1.2em;
+  font-size: 1.2em;
+  padding: 0 .3em;
 } 
+@media screen and (min-width: 37.9375em){
+  #menu {
+    position: absolute;
+    left: 28px;
+    top: 48px;
+    width: 504px;
+    height: 37px;
+    margin-bottom: 0;
+  }
+  #menu ul { 
+    text-align: left;
+    font-size: 1em;
+  } 
+  #menu ul li { 
+    font-size: 1.9em;
+    padding: 0 1.2em;
+  } 
+}
 #menu ul li a {
   font-weight: normal;
 }
@@ -272,121 +303,160 @@ dd{
 
 #wrapper {
   position: relative;
-  margin: 20px auto;
-  padding: 154px 0 20px 0;
-  border: 1px #ddd solid;
-  width: 998px; 
+  padding: 0 0 20px 0;
+  max-width: 998px; 
   overflow: hidden;
-  background: #fff url(../img/bgnd/wave.png) center 104px no-repeat;
+  background: #fff;
 }
-#content { 
-  position: relative;
-  margin: 0 auto;
-  width: 943px; 
-  padding: 10px 0 0 0;
-  overflow: hidden;
+@media screen and (min-width: 37.9375em){
+  #wrapper {
+    padding: 154px 0 20px 0;
+    background: #fff url(../img/bgnd/wave.png) center 104px no-repeat;
+    margin: 20px auto;
+    border: 1px #ddd solid;
+  }
 }
-#primary { 
-  float: left;
-  width: 517px; 
-  overflow: hidden;
+#content {
+  padding: 0 20px;
 }
-#home #primary { 
-  width: 537px; 
+
+#secondary { 
+  padding-top: 3em;
 }
+@media screen and (min-width: 37.9375em){
+  #primary { 
+    float: left;
+    width: 60%; 
+    overflow: hidden;
+  }
+  #secondary { 
+    float: left;
+    width: 40%; 
+    padding: 10px 0 0 0;
+    overflow: hidden;
+  }
+  
+}
+
+
+
 .inner h1 {
   text-transform: uppercase;
 }
+@media screen and (min-width: 37.9375em){
+  .pagination a {
+    float: left;
+    width: 200px;
+  }
+  .pagination a.next {
+    float: right;
+    text-align: right;
+  }
+}
 .pagination a {
-  float: left;
-  width: 200px;
   font-size: 1.2em;
 }
 .pagination a.prev:before {
   padding: .25em;
   content: "<";
 }
-.pagination a.next {
-  float: right;
-  text-align: right;
-}
 .pagination a.next:after {
   padding: .25em;
   content: ">";
 }
 
-#secondary { 
-  float: right;
-  width: 406px; 
-  padding: 10px 0 0 0;
-  overflow: hidden;
-  background: url(../img/bgnd/secondary_top.png) left top no-repeat;
+
+
+.panel { 
   color: #fff;
-}
-#secondary .outer { 
-  overflow: hidden;
-  padding: 0 0 10px;
-  background: url(../img/bgnd/secondary_bottom.png) center bottom no-repeat;
-}
-#secondary .inner { 
-  overflow: hidden;
-  border-left: 10px #8ad9e9 solid;
   padding: 20px 20px 10px;
-  border-right: 10px #8ad9e9 solid;
-  background: #82cfde;
+  background: #639bc9;
+  border-radius: 10px;
+  border: 10px #8ad9e9 solid;
+  overflow: hidden;
 }
-#secondary h4 { 
+.panel h4 { 
   text-transform: uppercase;
   margin-top: 0;
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin-bottom: .7em;
   padding-top: .7em;
   border-top: 1px #69c5d7 solid;
 }
-#secondary h4.first { 
+@media screen and (min-width: 37.9375em){
+  .panel h4 { 
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+}
+.panel h4.first { 
   margin-top: 0;
   padding-top: 0;
   border-top: 0;
 }
-#secondary ul { 
+.panel ul { 
   font-size: 1.6em;
   line-height: 1.5;
   overflow: hidden;
   margin: 0 0 1.2em 0;
 }
-#secondary ul li { 
-  float: left;
-  width: 170px;
-}
-#secondary ul.nav {
+.panel ul.nav {
   font-size: 1.4em;
   padding-top:0.7em;
   border-top:1px solid #69C5D7;
 }
-#secondary .nav li {
+.nav li {
   width: 346px;
   margin: 0 0 .3em 15px;
   padding-left: 6px;
   list-style: circle;
 }
-#secondary .nav li a {
+.panel a {
   color: #fff;
 }
-#secondary .nav li.selected { 
+.panel .nav li.selected { 
   list-style: disc;
 }
-#secondary .selected a { 
+.panel .selected a { 
   text-decoration: underline;
 }
-#secondary p { 
+.panel p { 
   font-size: 1.6em;
   line-height: 1.5;
 }
-.article #secondary p { 
+.article .panel p { 
   margin-bottom: .7em;
   padding-top: .7em;
   border-top: 1px #69c5d7 solid;
 }
+
+ul.two-col {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+ul.two-col li { 
+  // float: left;
+  // width: 50%;
+}
+
+@media screen and (min-width: 37.9375em){
+  .one-half { 
+    float: left;
+    width: 50%;
+  }
+  .one-third { 
+    float: left;
+    width: 33.3%;
+  }
+  .two-thirds { 
+    float: left;
+    width: 66.6%;
+  }
+}
+
+
 /* .article #secondary p strong { 
   display: block;
   font-size: 2em;
@@ -394,19 +464,28 @@ dd{
 */
 #site-info { 
   clear: both;
-  width: 943px; 
-  position: relative;
   margin: 3.5em auto 0;
-  padding: 3.5em 0 0 0;
+  padding: 3.5em 20px 0 20px;
   background: url(../img/bgnd/wave.png) center top no-repeat;
   color: #a6a6a6;
 }
-#site-info p {
-  float: right; 
-  width: 200px;
-  font-size: 1.4em;
-  text-align: right;
+@media screen and (min-width: 37.9375em){
+
+  #site-info { 
+    width: 943px; 
+    position: relative;
+    margin: 3.5em auto 0;
+    padding: 3.5em 0 0 0;
+  }
+  #site-info p {
+    float: right; 
+    width: 200px;
+    font-size: 1.4em;
+    text-align: right;
+  }
+
 }
+
 #site-info a {
   color: #878787;
 }
@@ -439,51 +518,69 @@ address.vcard .type {
 /* -------- */
 /* =HOME */
 
-
-#home #primary { 
-  margin-top: 10px;
-  background: url(../img/bgnd/landscape.jpg) left top no-repeat;
-  width: 537px;
-  height: 450px;
-  position: relative;
+#home #content {
+  background: url(../img/bgnd/joyce.jpg) -80px 0 no-repeat;
+  padding-left: 130px;
+}    
+#home #content h1 {
+  font-weight: normal;
 }
-#home #primary h1,
-#home #primary p { 
-  text-align: right;
-  padding: 15px 20px;
-  line-height: 1.5;
-  letter-spacing: -0.01em;
-  color: #fff;
-}
-#home #primary p { 
+#home #content p {
   font-size: 1.6em;
-  top: 290px;
-  width: 497px;
-  position: absolute;
-}
-#home #primary h1,
-#home #primary p { 
-  position: relative;
-  float: left;
-  margin-left: -999em;
-}
-#home #primary a.continued { 
-  font-size: 1.5em;
-  top: 379px;
-  left: 467px;
-  width: 50px;
-  position: absolute;
-  text-indent: 999em;
-}
-#home #primary .news { 
-  top: 432px;
-  right: 20px;
-  width: 537px;
-  position: absolute;
-  text-align: right;
-  font-size: 14px;
+  line-height: 1.5;
 }
 
+@media screen and (min-width: 37.9375em){
+  // #home #primary { 
+  //   margin-top: 10px;
+  //   background: url(..) left top no-repeat;
+  //   height: 450px;
+  //   position: relative;
+  // }
+  // #home #primary p { 
+  //   font-size: 1.6em;
+  //   top: 290px;
+  //   width: 497px;
+  //   position: absolute;
+  // }
+  // #home #primary h1,
+  // #home #primary p { 
+  //   position: relative;
+  //   float: left;
+  //   margin-left: -999em;
+  // }
+  // #home #primary a.continued { 
+  //   font-size: 1.5em;
+  //   top: 379px;
+  //   left: 467px;
+  //   width: 50px;
+  //   position: absolute;
+  //   text-indent: 999em;
+  // }
+  // #home #primary h1,
+  // #home #primary p { 
+  //   text-align: right;
+  //   padding: 15px 20px;
+  //   line-height: 1.5;
+  //   letter-spacing: -0.01em;
+  //   color: #fff;
+  //   font-weight: normal;
+  }
+// #home #primary h1,
+// #home #primary p { 
+//   line-height: 1.5;
+//   letter-spacing: -0.01em;
+// }
+
+  // #home #primary .news { 
+  //   top: 432px;
+  //   right: 20px;
+  //   width: 537px;
+  //   position: absolute;
+  //   text-align: right;
+  //   font-size: 14px;
+  // }
+}
 
 
 
