@@ -1,0 +1,24 @@
+{
+  "name": "allenvalleys-physio",
+  "version": "2.0.0",
+  "description": "Allen Valleys Physiotherapy",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allenvalleysphysiotherapy/allenvalleysphysiotherapy.github.io.git"
+  },
+  "author": "Stu Charlton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allenvalleysphysiotherapy/allenvalleysphysiotherapy.github.io/issues"
+  },
+  "homepage": "https://github.com/allenvalleysphysiotherapy/allenvalleysphysiotherapy.github.io#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
