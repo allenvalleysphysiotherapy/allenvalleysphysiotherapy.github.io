@@ -1,0 +1,42 @@
+/* ________________________________________ */
+/* =SCRATCH */
+
+.continued:after {
+  padding: .25em;
+  content: ">";
+}
+.first {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}  
+.summary {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+/* for accessibility */
+.list_head {
+  position:absolute;
+  left:0px;
+  top:-500px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.new { 
+  padding: 0px 4px;
+  background: #639BC9;
+  color: #fff;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+.simpleList li { 
+  margin: 0 0 6px 18px;
+  padding-left: 6px;
+  list-style: disc;
+}
+
+.inner h1 {
+  text-transform: uppercase;
+}

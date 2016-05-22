@@ -10,14 +10,14 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'inc/css/screen.css' : 'inc/scss/screen.scss'
+          'ui/css/style.css' : 'ui/scss/style.scss'
         }
       }
     },
     browserSync: {
       bsFiles: {
         src : [
-          'inc/css/*.css',
+          'ui/css/*.css',
           'index.html'
         ],        
       },

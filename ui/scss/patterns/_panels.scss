@@ -1,0 +1,66 @@
+/* ________________________________________ */
+/* =PANELS */
+
+.panel { 
+  color: #fff;
+  padding: 20px 20px 10px;
+  background: #639bc9;
+  border-radius: 10px;
+  border: 10px #8ad9e9 solid;
+  overflow: hidden;
+}
+.panel h4 { 
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 1.6em;
+  margin-bottom: .7em;
+  padding-top: .7em;
+  border-top: 1px #69c5d7 solid;
+}
+@media screen and (min-width: 37.9375em){
+  .panel h4 { 
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+}
+.panel h4.first { 
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+.panel ul { 
+  font-size: 1.6em;
+  line-height: 1.5;
+  overflow: hidden;
+  margin: 0 0 1.2em 0;
+}
+.panel ul.nav {
+  font-size: 1.4em;
+  padding-top:0.7em;
+  border-top:1px solid #69C5D7;
+}
+.nav li {
+  width: 346px;
+  margin: 0 0 .3em 15px;
+  padding-left: 6px;
+  list-style: circle;
+}
+.panel a {
+  color: #fff;
+}
+.panel .nav li.selected { 
+  list-style: disc;
+}
+.panel .selected a { 
+  text-decoration: underline;
+}
+.panel p { 
+  font-size: 1.6em;
+  line-height: 1.5;
+}
+.article .panel p { 
+  margin-bottom: .7em;
+  padding-top: .7em;
+  border-top: 1px #69c5d7 solid;
+}

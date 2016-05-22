@@ -1,0 +1,28 @@
+/* ________________________________________ */
+/* =LAYOUT */
+
+ul.two-col {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+ul.two-col li { 
+  // float: left;
+  // width: 50%;
+}
+
+@media screen and (min-width: 37.9375em){
+  .one-half { 
+    float: left;
+    width: 50%;
+  }
+  .one-third { 
+    float: left;
+    width: 33.3%;
+  }
+  .two-thirds { 
+    float: left;
+    width: 66.6%;
+  }
+}
+

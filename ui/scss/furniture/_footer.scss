@@ -1,0 +1,50 @@
+/* ________________________________________ */
+
+/* =FOOTER */
+
+#site-info { 
+  clear: both;
+  margin: 3.5em auto 0;
+  padding: 3.5em 20px 0 20px;
+  background: url(../img/bgnd/wave.png) center top no-repeat;
+  color: #a6a6a6;
+}
+@media screen and (min-width: 37.9375em){
+
+  #site-info { 
+    width: 943px; 
+    position: relative;
+    margin: 3.5em auto 0;
+    padding: 3.5em 0 0 0;
+  }
+  #site-info p {
+    float: right; 
+    width: 200px;
+    font-size: 1.4em;
+    text-align: right;
+  }
+
+}
+
+#site-info a {
+  color: #878787;
+}
+address.vcard {
+  font-size: 1.3em;
+  font-style: normal;
+  line-height: 1.6;
+  margin: 0 0 2.2em 0;  
+}
+address.vcard span {
+  float: left;  
+  margin: 0 .5em 0 0;
+} 
+address.vcard .group {
+  clear: left;  
+} 
+address.vcard .url,
+address.vcard .country-name,
+address.vcard .type {
+  display: none;
+}
+

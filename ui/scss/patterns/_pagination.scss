@@ -1,0 +1,24 @@
+/* ________________________________________ */
+/* =PAGINATION */
+
+@media screen and (min-width: 37.9375em){
+  .pagination a {
+    float: left;
+    width: 200px;
+  }
+  .pagination a.next {
+    float: right;
+    text-align: right;
+  }
+}
+.pagination a {
+  font-size: 1.2em;
+}
+.pagination a.prev:before {
+  padding: .25em;
+  content: "<";
+}
+.pagination a.next:after {
+  padding: .25em;
+  content: ">";
+}

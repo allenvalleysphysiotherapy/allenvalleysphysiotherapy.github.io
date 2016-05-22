@@ -1,0 +1,38 @@
+/* -------- */
+/* =ABOUT PAGE */
+
+body#about #primary  {
+  position: relative;
+  text-align: right;
+  background: url(../img/bgnd/joyce.jpg) left top no-repeat;
+  height: 580px;
+}
+body#about #primary p {
+  padding-left: 225px;
+}
+
+body#about #primary div {
+  text-align: left;
+  width:517px;
+  position: absolute;
+  top: 355px;
+  left: 0px;
+}
+body#about #primary div h2 {
+  margin-top: 0;
+  padding-top: .7em;
+  border-top: 8px #ddd solid;
+}
+body#about #primary div p {
+  padding-left: 0;
+}
+
+#logos {
+  overflow: hidden;
+}
+#logos li {
+  float: left;
+  display: inline;
+  margin: 0 30px 0 0;
+}
+

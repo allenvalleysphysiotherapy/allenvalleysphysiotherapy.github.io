@@ -1,0 +1,39 @@
+/* ________________________________________ */
+/* =CONTAINERS */
+
+#wrapper {
+  position: relative;
+  padding: 0 0 20px 0;
+  max-width: 998px; 
+  overflow: hidden;
+  background: #fff;
+}
+@media screen and (min-width: 37.9375em){
+  #wrapper {
+    padding: 154px 0 20px 0;
+    background: #fff url(../img/bgnd/wave.png) center 104px no-repeat;
+    margin: 20px auto;
+    border: 1px #ddd solid;
+  }
+}
+#content {
+  padding: 0 20px;
+}
+
+#secondary { 
+  padding-top: 3em;
+}
+@media screen and (min-width: 37.9375em){
+  #primary { 
+    float: left;
+    width: 60%; 
+    overflow: hidden;
+  }
+  #secondary { 
+    float: left;
+    width: 40%; 
+    padding: 10px 0 0 0;
+    overflow: hidden;
+  }
+  
+}

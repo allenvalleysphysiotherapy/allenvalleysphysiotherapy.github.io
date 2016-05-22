@@ -1,0 +1,124 @@
+/* ________________________________________ */
+
+body {	
+  font-family: Cambria, Georgia, "Times New Roman", Times, serif; 
+  font-size : 62.5%; 
+  line-height: 1.4;
+  color: #6c6361;
+  background: #f8f8f8;
+}
+/* ________________________________________ */
+
+/* =TYPOGRAPHY */
+
+img {
+  border: 0;
+  margin: 0;
+}
+p {
+  clear: none;
+  font-size: 1.4em;
+  margin: 0 0 1.4em 0;
+  padding: 0;
+
+}
+blockquote {
+  font-style: italic;
+}
+cite {
+  font-style: normal;
+  font-size: 1.2em
+}
+acronym,
+abbr {
+  cursor: help;
+  border: 0;
+} 
+abbr.date {
+  border: 0;
+} 
+
+/* -------- */
+/* =LINKS */
+
+a,
+a:link 
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none;
+  font-weight: bold;
+  color: #639bc9;
+}
+a:hover {
+  color: #4d4d4d;
+  text-decoration: underline;
+}
+a.image,
+a:hover.image { 
+  border: 0; 
+}
+
+/* ---------- */
+/* =HEADINGS */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.4em 0 .7em 0;
+}
+h1 {
+  font-size: 2em;
+  letter-spacing: 0.02em;
+  margin: 0 0 .7em 0;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.4em;
+}
+h6 {
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+
+/* -------- */
+/* =LISTS */
+
+ul, ol, dl {
+  font-size: 1.4em;
+  margin: 0 0 1.4em 0;
+  padding: 0;
+}
+ol {
+  margin-left: 20px;
+  padding-left: 20px;
+  list-style: decimal;
+}
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+dl {
+  clear: both;
+  overflow: hidden;
+}
+dt,
+dd {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+dt{
+  clear: both;
+}
+dd{
+  clear: none;
+}

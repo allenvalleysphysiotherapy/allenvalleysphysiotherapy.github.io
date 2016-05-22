@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*
+COLOURS
+BGND #6c6361
+BLUE #639bc9
+*/
+
+// Core
+@import "core/reset";
+@import "core/base";
+
+// Layout
+@import "layout/containers";
+@import "layout/layout";
+
+// Furniture
+@import "furniture/header";
+@import "furniture/footer";
+
+// Patterns
+@import "patterns/panels";
+@import "patterns/pagination";
+@import "patterns/scratch";
+
+// Local tailorings
+@import "tailorings/home";
+@import "tailorings/contact";
+@import "tailorings/about";
+
